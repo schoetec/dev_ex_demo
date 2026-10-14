@@ -1,17 +1,20 @@
-# Current Feature: Change the header text.
+# Current Feature
 
-## Goals
-
-- Change the text of the H1 in the \SpringWeb\WebPortal\src\main\java\com\example\webportal\MainView.java portal landingspage to "Welcome to this DEMO WebPortal". The header text can be found in the static variable LANDINGSPAGE_HEADER_TEXT. Update this variable content.
-- Do not change any of the other components.
-
-## Notes
-
-In the WebPortal change the header text.
+<!-- Feature Name -->
 
 ## Status
 
-In Progress
+<!-- Not Started|In Progress|Completed -->
+
+Not Started
+
+## Goals
+
+<!-- Goals & requirements -->
+
+## Notes
+
+<!-- Any extra notes -->
 
 ## History
 
