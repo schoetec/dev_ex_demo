@@ -1,0 +1,30 @@
+docker ps
+docker images
+docker kill <container-id>
+docker rmi -f <image-d>
+docker logs --follow <contianer-id>
+docker logs --tail <contianer-id>
+docker build . -t <image-id>
+docker run -p <external-port>:<internal-port> -d <image-id>
+docker run -e <environment-property>=<value> -p <external-port>:<internal-port> -d <image-id>
+docker exec -it <container-id> /bin/bash
+docker save -o <filename>.tar <image-name>
+docker save -o <filename>.tar <image-name>:latest
+docker save <image-name>:latest | gzip > <filename>.tar.gz
+docker load < <filename>.tar.gz
+docker load --input <filename>.tar
+docker container ls -a
+docker container rm
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container-name>
+docker start [OPTIONS] CONTAINER [CONTAINER...]
+docker stop [OPTIONS] CONTAINER [CONTAINER...]
+docker network prune
+
+docker compose start <serevice> : start container
+docker compose stop <service> : stop container
+docker compose create <service> : creates container
+docker compose up -d : start all detached
+docker compose down : stop all and remove containers
+docker compose logs <service> : show service log
+docker compose pause : pause services
+docker compose unpause : pause services

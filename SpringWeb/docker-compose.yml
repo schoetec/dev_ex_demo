@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  webportal:
+    build: ./WebPortal
+    ports:
+      - "8090:8090"
+    depends_on:
+      - webservice
+    environment:
+      - BASE_URL=http://webservice:8080
+  webservice:
+    build: ./WebService
+    ports:
+      - "8080:8080"
+
+networks:
+  default:
+    driver: bridge
