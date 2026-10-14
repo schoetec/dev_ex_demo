@@ -13,7 +13,7 @@ import com.vaadin.flow.component.html.NativeLabel;
 public class MainView extends VerticalLayout {
 
     // New header text for the landingspage
-    static String LANDINGSPAGE_HEADER_TEXT = "Welcome to this SUPER WebPortal";
+    static String LANDINGSPAGE_HEADER_TEXT = "Welcome to this DEMO WebPortal";
 
     private void showErrorDialog(String errorMessage) {
         Dialog dialog = new Dialog();
